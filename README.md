@@ -9,16 +9,16 @@ Blog link: not gonna update
 
 - Below are the steps followed while adding the Process Hollowing technique in the tool.
 
-	- **Step 1: Create a new target process in a suspended state. This can be achieved by passing the Create_Suspended value in the dwCreationFlags parameter of CreateProcess Windows API.
-	- **Step 2: Once the process is created in a suspended state we will create a new executable section. It won't be bind to any process. 
-	- **Step 3: We need to locate the base address of the target process. This can be done by getting ThreadContext.
-		- **Security Researchers found that the register Rdx was pointing to a memory location. 16 bytes after this location contains the address of the location of ImageBase.
+	- **Step 1: Create a new target process in a suspended state. This can be achieved by passing the Create_Suspended value in the dwCreationFlags parameter of CreateProcess Windows API.**
+	- **Step 2: Once the process is created in a suspended state we will create a new executable section. It won't be bind to any process.**
+	- **Step 3: We need to locate the base address of the target process. This can be done by getting ThreadContext.**
+		- **Security Researchers found that the register Rdx was pointing to a memory location. 16 bytes after this location contains the address of the location of ImageBase.**
 
-	- **Step 4: Hollowing the suspended process by calling the API - ZwUnmapViewOfSection
-	- **Step 5: Allocating space for the Malware Image.
-	- **Step 6: Rewriting PE headers and sections into memory.
-	- **Step 7: Updating the ThreadContext's ImageBase and EntryPoint.
-	- **Step 8: Resume the thread with API - ResumeThread.
+	- **Step 4: Hollowing the suspended process by calling the API - ZwUnmapViewOfSection.**
+	- **Step 5: Allocating space for the Malware Image.**
+	- **Step 6: Rewriting PE headers and sections into memory.**
+	- **Step 7: Updating the ThreadContext's ImageBase and EntryPoint.**
+	- **Step 8: Resume the thread with API - ResumeThread.**
 	
 - Only tested in Win10/x64 works fine.	
 - **Below are the original process and malware process's path**
