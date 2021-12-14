@@ -1,0 +1,7 @@
+C:\Project\Projects\Project_ProcessHollowing\ProcessHollowing\ProcessHollowing\bin\Debug\ProcessHollowing.exe.config
+C:\Project\Projects\Project_ProcessHollowing\ProcessHollowing\ProcessHollowing\bin\Debug\ProcessHollowing.exe
+C:\Project\Projects\Project_ProcessHollowing\ProcessHollowing\ProcessHollowing\bin\Debug\ProcessHollowing.pdb
+C:\Project\Projects\Project_ProcessHollowing\ProcessHollowing\ProcessHollowing\obj\Debug\ProcessHollowing.csprojAssemblyReference.cache
+C:\Project\Projects\Project_ProcessHollowing\ProcessHollowing\ProcessHollowing\obj\Debug\ProcessHollowing.csproj.CoreCompileInputs.cache
+C:\Project\Projects\Project_ProcessHollowing\ProcessHollowing\ProcessHollowing\obj\Debug\ProcessHollowing.exe
+C:\Project\Projects\Project_ProcessHollowing\ProcessHollowing\ProcessHollowing\obj\Debug\ProcessHollowing.pdb
