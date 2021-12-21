@@ -14,7 +14,10 @@ namespace ProcessHollowing
     {
         static void Main(string[] args)
         {
-            ProcessHollow.CreateProcess_custom();
+            string CreateProcess_path = @"C:\Windows\System32\mspaint.exe";
+            string ProcessReplace_path = @"C:\Windows\System32\cmd.exe";
+            ProcessHollow.CreateProcess_custom(CreateProcess_path, ProcessReplace_path);
+
         }
     }
 }

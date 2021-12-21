@@ -23,8 +23,8 @@ Blog link: not gonna update
 - Only tested in Win10/x64 works fine.	
 - **Below are the original process and malware process's path**
 ```
-	string OriPath = @"C:\Windows\System32\mspaint.exe";
-	string MalPath = @"C:\Windows\System32\cmd.exe";
+	string CreateProcess_path = @"C:\Windows\System32\mspaint.exe";
+	string ProcessReplace_path = @"C:\Windows\System32\cmd.exe";
 ```
 
 ## Usage 
@@ -34,11 +34,13 @@ Blog link: not gonna update
 	![avatar](https://raw.githubusercontent.com/Kara-4search/ProjectPics/main/ProcessHollowing_CMD.png)
 
 ## TO-DO list
-- Restructure Code
+- Restructure Code - (DONE)
+- Restructure Code2
 - PE relocation
 
 ## Update history
-- NONE
+- Restructure Code - 20211222
+- Remove unnecessary code in ProcessHollow.cs - 20211222
 
 # Reference link:
 	1. https://www.displayfusion.com/Discussions/View/converting-c-data-types-to-c/?ID=38db6001-45e5-41a3-ab39-8004450204b3
